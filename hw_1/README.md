@@ -8,10 +8,7 @@
 
 До кучи поставим GUI MongoDB Compass, так хоть не только на голую консоль смотреть) Скачаем [отсюда](https://www.mongodb.com/try/download/compass)
 MongoDB Shell и MongoDB Compass и установим (GDebi package installer в помощь):
-<!-- ![installed_mongo_shell](/hw_1/pictures/installed_mongosh.png) -->
-<p align="left">
-  <img width="394" height="392" src="https://github.com/kirilliliych/mipt-sbt-db/tree/main/hw_1/pictures/installed_mongosh.png">
-</p>
+![installed_mongo_shell](/hw_1/pictures/installed_mongosh.png)
 
 ![installed_mongodb_compass](/hw_1/pictures/installed_mongodb_compass.png)
 
