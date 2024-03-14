@@ -16,7 +16,8 @@ MongoDB Shell и MongoDB Compass и установим (GDebi package installer 
 сделаем это в графическом интерфейсе (мне точно не лень писать mongoimport):
 ![made_db_and_collection](/pictures/created_database_and_collection.png)
 
-Пользуясь удобным функционалом `ADD DATA`->`Import JSON or CSV file`, импортируем датасет с ростом и весом 18-летних людей
+Пользуясь удобным функционалом `ADD DATA`->`Import JSON or CSV file`, импортируем 
+[датасет с ростом и весом 18-летних людей](https://www.kaggle.com/datasets/burnoutminer/heights-and-weights-dataset?resource=download)
 в коллекцию:
 ![import_dataset](/pictures/import_csv.png)
 
@@ -27,15 +28,15 @@ MongoDB Shell и MongoDB Compass и установим (GDebi package installer 
 ![insert_one_and_many](/pictures/insert_one_and_many.png)
 
 Проверим, что вставленные документы действительно оказались в коллекции:
-![results_insert_one_and_many](/pictures/insert_one_and_many.png)
 ![results_insert_one_and_many_additional](/pictures/result_6666_insert_many.png)
 
 ### R - read
 Выполним `find` чуть посложнее, чем вся коллекция:
 ![find](/pictures/find.png)
 
-А что будет, если под фильтр `findOne` попадают несколько документов? Посмотрим на примере документов под индексом 6666:
+А что будет, если под фильтр `findOne` попадают несколько документов? Посмотрим на примере:
 ![find_one](/pictures/find_one.png)
+
 (Ага, если документ был вставлен раньше другого, то и `findOne` находит именно его!) На самом деле все зависит от
 натурального порядка, который (см. [ссылку](https://www.mongodb.com/docs/manual/reference/method/db.collection.findOne/))
 определяет формат хранения данных на диске.
@@ -43,6 +44,7 @@ MongoDB Shell и MongoDB Compass и установим (GDebi package installer 
 ### U - update
 Обновим пару значений через `updateOne` и `updateMany`:
 ![update_one_and_many](/pictures/update_one_and_many.png)
+
 Видим, что у документов, удовлетворяющих фильтру, заменились соответствующие поля.
 
 Теперь применим `replaceOne` к одному из обновленных документов и посмотрим результат выполнения:
@@ -52,7 +54,7 @@ MongoDB Shell и MongoDB Compass и установим (GDebi package installer 
 ### D - delete
 Удалим только что созданный путем `replaceOne` документ `{"Index": 666, "Height(Inches)": 66}`, а также
 все документы, где Weight меньше 110 фунтов (нет анорексии):
-![delete_one](/pictures/delete_one.png)https://www.mongodb.com/docs/manual/reference/method/db.collection.findOne/
+![delete_one](/pictures/delete_one.png)
 ![delete_one](/pictures/delete_many.png)
 
 ## Добавление индекса
@@ -60,13 +62,16 @@ MongoDB Shell и MongoDB Compass и установим (GDebi package installer 
 который затронет большинство документов коллекции и предоставит информацию об исполнении `find` с соответствующим фильтром.
 Нас интересует количество исследованных документов:
 ![no_index_find](/pictures/no_index_find.png)
+
 Видим, что под нее попало абсолютное большинство (если не все) документы коллекции; кроме того, операция заняла 21 миллисекунду
 (executionTimeMillis).
 
 Добавим возрастающий индекс по полю Height(Inches):
 ![added_index](/pictures/added_index.png)
+
 Затем выполним вышеупомянутый запрос:
 ![index_find](/pictures/index_find.png)
+
 В силу упорядочивания по индексу существенно уменьшилось количество исследованных документов, что на больших выборках данных
 даст значительный прирост производительности. Кроме того, несколько уменьшилось executionTimeMillis -- теперь 17
 миллисекунд вместо 21. Победа!
