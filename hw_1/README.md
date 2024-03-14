@@ -55,9 +55,10 @@ MongoDB Shell и MongoDB Compass и установили (GDebi package installe
 Документ под индексом 1337 исчез, а его место занял документ под индексом 666, как и предполагалось.
 
 ### D - delete
-Удалим только что созданный путем `replaceOne` документ `{"Index": 666, "Height(Inches)": 66}`, а также
-все документы, где Weight меньше 110 фунтов (нет анорексии):
+Удалим только что созданный путем `replaceOne` документ `{"Index": 666, "Height(Inches)": 66}`: 
 ![delete_one](/hw_1/pictures/delete_one.png)
+
+Удалим также все документы, где Weight меньше 110 фунтов (нет анорексии):
 ![delete_one](/hw_1/pictures/delete_many.png)
 
 ## Добавление индекса
