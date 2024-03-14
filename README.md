@@ -68,7 +68,8 @@ MongoDB Shell и MongoDB Compass и установим (GDebi package installer 
 (executionTimeMillis).
 
 Добавим возрастающий индекс по полю Height(Inches):
-![added_index](/pictures/added_index.png).
+![added_index](/pictures/added_index.png)
+
 Затем выполним вышеупомянутый запрос:
 ![index_find](/pictures/index_find.png)
 
