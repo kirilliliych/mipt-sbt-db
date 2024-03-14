@@ -3,7 +3,7 @@
 ![docker_hello_world](/pictures/installed_docker.png)
 
 ## Установка MongoDB
-Развернем MongoDB в Docker через ![docker-compose файл](/docker-compose.yaml):
+Развернем MongoDB в Docker через ![docker-compose файл](/docker-compose.yaml) командой docker compose up:
 ![docker_compose_up](/pictures/installed_mongo_docker.png)
 
 До кучи поставим GUI MongoDB Compass, так хоть не только на голую консоль смотреть) Скачаем [отсюда](https://www.mongodb.com/try/download/compass)
