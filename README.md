@@ -28,7 +28,7 @@ MongoDB Shell и MongoDB Compass и установим (GDebi package installer 
 ![insert_one_and_many](/pictures/insert_one_and_many.png)
 
 Проверим, что вставленные документы действительно оказались в коллекции:
-![results_insert_one_and_many_additional](/pictures/result_6666_insert_many.png)
+![results_insert_one_and_many_additional](/pictures/results_insert_one_and_many.png)
 ![result_6666_insert_many.png](/pictures/result_6666_insert_many.png)
 
 ### R - read
