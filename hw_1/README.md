@@ -6,10 +6,12 @@
 Развернем MongoDB в Docker через ![docker-compose файл](/docker-compose.yaml) командой docker compose up:
 ![docker_compose_up](/hw_1/pictures/installed_mongo_docker.png)
 
-До кучи поставим GUI MongoDB Compass, так хоть не только на голую консоль смотреть) Скачаем [отсюда](https://www.mongodb.com/try/download/compass)
-MongoDB Shell и MongoDB Compass и установим (GDebi package installer в помощь):
+До кучи поставим GUI MongoDB Compass, так хоть не только на голую консоль смотреть)
 ![installed_mongo_shell](/hw_1/pictures/installed_mongosh.png)
 ![installed_mongodb_compass](/hw_1/pictures/installed_mongodb_compass.png)
+
+Скачали [отсюда](https://www.mongodb.com/try/download/compass)
+MongoDB Shell и MongoDB Compass и установили (GDebi package installer в помощь).
 
 ## Создание базы данных и коллекции, заполненной датасетом
 Создадим базу данных `people_parameters` и в ней коллекцию `height_weight_18yo`: для разнообразия (иначе зачем гуи?)
