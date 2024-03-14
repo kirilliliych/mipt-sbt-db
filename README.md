@@ -16,7 +16,7 @@ MongoDB Shell и MongoDB Compass и установим (GDebi package installer 
 сделаем это в графическом интерфейсе (мне точно не лень писать mongoimport):
 ![made_db_and_collection](/pictures/created_database_and_collection.png)
 
-Пользуясь удобным функционалом `ADD DATA`->`Import JSON or CSV file`, импортируем 
+Пользуясь удобным функционалом `ADD DATA`->`Import JSON or CSV file`, импортируем
 [датасет с ростом и весом 18-летних людей](https://www.kaggle.com/datasets/burnoutminer/heights-and-weights-dataset?resource=download)
 в коллекцию:
 ![import_dataset](/pictures/import_csv.png)
@@ -67,7 +67,7 @@ MongoDB Shell и MongoDB Compass и установим (GDebi package installer 
 (executionTimeMillis).
 
 Добавим возрастающий индекс по полю Height(Inches):
-![added_index](/pictures/added_index.png)
+![added_index](/pictures/added_index.png).
 
 Затем выполним вышеупомянутый запрос:
 ![index_find](/pictures/index_find.png)
