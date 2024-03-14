@@ -60,6 +60,7 @@ MongoDB Shell и MongoDB Compass и установим (GDebi package installer 
 ## Добавление индекса
 Выполним запрос `db.height_weight_18yo.find({'Height(Inches)': {$gt: 70}}).explain("executionStats")`,
 который затронет большинство документов коллекции и предоставит информацию об исполнении `find` с соответствующим фильтром.
+
 Нас интересует количество исследованных документов:
 ![no_index_find](/pictures/no_index_find.png)
 
@@ -68,7 +69,6 @@ MongoDB Shell и MongoDB Compass и установим (GDebi package installer 
 
 Добавим возрастающий индекс по полю Height(Inches):
 ![added_index](/pictures/added_index.png).
-
 Затем выполним вышеупомянутый запрос:
 ![index_find](/pictures/index_find.png)
 
