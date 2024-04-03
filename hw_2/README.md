@@ -6,13 +6,13 @@
 ## Тест сохранения и чтения на одной ноде
 Зайдем в директорию [redis_one_node](/hw_2/redis_one_node/) и поднимем контейнер с redis командой `docker compose up -d`
 (порт будет 6379):
-![redis_one_node_docker](/hw_2/pictures/redis_one_node_docker.pn)
+![redis_one_node_docker](/hw_2/pictures/redis_one_node_docker.png)
 
 Затем проверим, что redis доступен:
 ![redis_one_node_ping](/hw_2/pictures/redis_one_node_ping.png)
 
 Теперь запустим `python3 json_redis_test.py` и посмотрим на результаты замеров скорости:
-![redis_one_node_time](/hw_2/pictures/redis_one_node_time.pn)
+![redis_one_node_time](/hw_2/pictures/redis_one_node_time.png)
 
 ## Тест сохранения и чтения на кластере
 Теперь организуем кластер. Аналогично зайдем в директорию [redis-cluster](/hw_2/redis_cluster/) и поднимем контейнер через `docker compose up -d` 
