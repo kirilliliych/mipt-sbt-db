@@ -1,0 +1,48 @@
+version: "3.8"
+
+services:
+  main:
+    image: redis
+    container_name: redis-master
+    restart: always
+    ports:
+      - "6380:6380"
+    volumes:
+      # - ./data:/data_cluster
+    command: redis-server --timeout 1500 --cluster-node-timeout 5000 --port 6380 --appendonly yes
+    networks:
+      app_subnet:
+        ipv4_address: 172.16.0.10
+
+  slave1:
+    image: redis
+    container_name: redis-slave1
+    restart: always
+    ports:
+      - "6381:6381"
+    volumes:
+      # - ./data:/data_cluster
+    command: redis-server --timeout 1500 --cluster-node-timeout 5000 --slaveof 172.16.0.10 6380 --port 6381 --appendonly yes
+    networks:
+      app_subnet:
+        ipv4_address: 172.16.0.11
+
+  slave2:
+    image: redis
+    container_name: redis-slave2
+    restart: always
+    ports:
+      - "6382:6382"
+    volumes:
+      # - ./data:/data_cluster
+    command: redis-server --timeout 1500 --cluster-node-timeout 5000 --slaveof 172.16.0.10 6380 --port 6382 --appendonly yes
+    networks:
+      app_subnet:
+        ipv4_address: 172.16.0.12
+
+networks:
+  app_subnet:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.16.0.0/24
