@@ -19,17 +19,17 @@
 а на строке 25 - адрес, по которому будет осуществляться доступ к базе данных: `'http://localhost:5984/sbt_hw3_db'`
 
 Затем откроем html-файл, нажмем на `Sync` и убедимся, что фамилия выводится:
-[html_first_launch](/hw_3/pictures/html_first_launch.png)
+![html_first_launch](/hw_3/pictures/html_first_launch.png)
 
 После этого остановим CouchDB:
-[stopping_couch](/hw_3/pictures/stopping_couchDB.png)
+![stopping_couch](/hw_3/pictures/stopping_couchDB.png)
 
 Когда после этого обновим/переоткроем html-страницу и снова нажмем на 'Sync', то сможем
 убедиться, что фамилия по-прежнему выводится:
-[html_after_stopping_couchDB](/hw_3/pictures/html_after_stopping_couchDB.png)
+![html_after_stopping_couchDB](/hw_3/pictures/html_after_stopping_couchDB.png)
 
 Тем не менее, сервер с удаленной базой данных отключен:
-[couchDB_stopped_proof](/hw_3/pictures/couchDB_stopped_proof.png)
+![couchDB_stopped_proof](/hw_3/pictures/couchDB_stopped_proof.png)
 
 Произошло это вследствие синхронизации с локальной PouchDB, то есть в случае недоступности
 удаленной PouchDB локальная все еще может показать данные, сохраненные с момента последнего подключения.
