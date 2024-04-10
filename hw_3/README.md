@@ -14,7 +14,7 @@
 Включим CORS в Config, поставим _All domains_, чтобы точно не было проблем с подключением к базе данных:
 ![configuring_CORS](/hw_3/pictures/configuring_CORS.png)
 
-Теперь нужно отредактировать [html-файл](/ДЗ3.html): в качестве src на строке 18 поставим
+Теперь нужно отредактировать [html-файл](/hw_3/ДЗ3.html): в качестве src на строке 18 поставим
 `"http://cdn.jsdelivr.net/npm/pouchdb@8.0.1/dist/pouchdb.min.js"`, как на [официальном сайте](https://pouchdb.com/download.html),
 а на строке 25 - адрес, по которому будет осуществляться доступ к базе данных: `'http://localhost:5984/sbt_hw3_db'`
 
