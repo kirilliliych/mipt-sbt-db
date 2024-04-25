@@ -2,10 +2,10 @@ import weaviate
 import weaviate.classes as wvc
 
 client = weaviate.connect_to_wcs(
-    cluster_url="https://mipt-sbt-db-5bhod7yu.weaviate.network",
-    auth_credentials=weaviate.auth.AuthApiKey("gJ0sD5gCiFyPKTUdCjPmkS2984c6ZKrbWFI9"),
+    cluster_url="cluster url",      # your cluster url here
+    auth_credentials=weaviate.auth.AuthApiKey("weaviate token"),    # your weaviate token here
     headers={
-        "X-OpenAI-Api-Key": "sk-proj-pWYMnmCAq3dWzm8PddM8T3BlbkFJ0NDY1ucxbbSo3XZZBGVt"
+        "X-OpenAI-Api-Key": "openai token"  # your openai token here
     }
 )
 
