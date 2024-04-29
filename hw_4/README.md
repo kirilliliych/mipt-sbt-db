@@ -144,4 +144,11 @@ Weaviate может автоматически реплицировать дан
 при выбранном параметре `ALL` база данных синхронизируется, иначе (возможно с версии v1.18) с точки зрения пользователя
 запись асинхронна. Подробнее [здесь](https://weaviate.io/developers/weaviate/concepts/replication-architecture).
 
+## На каком языке/языках программирования написана Weaviate?
+Weaviate фактически полностью написана на `Go`. Скриншот с гитхаба:
+![weaviate_languages](/hw_4/pictures/weaviate_languages.png)
 
+## Какие типы индексов поддерживаются в Weaviate? Приведите пример создания индексов.
+Weaviate поддерживает два типа индексов:
+1. Approximate nearest neigbour index(ANN) -- используется для обслуживания всех запросов, связанных с векторным поиском.
+2. Inverted index -- позволяет фильтровать по свойствам и выполнять [BM25 запросы](https://ru.wikipedia.org/wiki/Okapi_BM25#:~:text=BM25%20%E2%80%94%20%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%BE%D0%B2%D0%B0%D1%8F%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F%20%D0%BD%D0%B0%20%D0%BD%D0%B5%D1%83%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BE%D1%87%D0%B5%D0%BD%D0%BD%D0%BE%D0%BC,%D0%BD%D0%B8%D0%BC%D0%B8%20(%D0%BD%D0%B0%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%2C%20%D0%B1%D0%BB%D0%B8%D0%B7%D0%BE%D1%81%D1%82%D0%B8).). 
