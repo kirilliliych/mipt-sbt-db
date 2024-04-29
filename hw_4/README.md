@@ -348,3 +348,16 @@ Weaviate - [опенсорсный проект](https://github.com/weaviate/wea
 
 Полный список команды Weaviate можно найти [здесь](https://careers.weaviate.io/people).
 
+## Как продолжить самостоятельное изучение языка запросов с помощью демобазы. Если демобазы нет, то создайте ее.
+Разработчики позаботились и о [демобазе](https://github.com/weaviate/DEMO-NewsPublications) :)
+
+## Где найти документацию и пройти обучение
+[Огромная документация](https://weaviate.io/developers/weaviate)
+[Часть с туториалами](https://weaviate.io/developers/weaviate/tutorials)
+[Еще туториалы на гитхабе](https://github.com/weaviate-tutorials)
+
+## Как быть в курсе происходящего
+[Официальный сайт](https://weaviate.io/)
+[Канал на Youtube](https://www.youtube.com/@Weaviate)
+[Официальный форум](https://forum.weaviate.io/)
+[Блог](https://weaviate.io/blog)
