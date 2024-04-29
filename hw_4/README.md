@@ -298,7 +298,7 @@ Weaviate не поддерживает транзакции. В самой [фи
 при решардинге). При распределении шардов Weaviate, как правило, старается помещать их сначала на те узлы,
 на которых больше всего свободного дискового пространства.
 
-[В документации Weaviate](https://weaviate.io/developers/weaviate/concepts/cluster) шардинг советуют использовать в основном
+В документации Weaviate шардинг советуют использовать в основном
 для того, чтобы иметь возможность работать с большими датасетами. 
 
 Плюсы шардинга:
@@ -352,12 +352,12 @@ Weaviate - [опенсорсный проект](https://github.com/weaviate/wea
 Разработчики позаботились и о [демобазе](https://github.com/weaviate/DEMO-NewsPublications) :)
 
 ## Где найти документацию и пройти обучение
-[Огромная документация](https://weaviate.io/developers/weaviate)
-[Часть с туториалами](https://weaviate.io/developers/weaviate/tutorials)
-[Еще туториалы на гитхабе](https://github.com/weaviate-tutorials)
+- [Огромная документация](https://weaviate.io/developers/weaviate)
+- [Часть с туториалами](https://weaviate.io/developers/weaviate/tutorials)
+- [Еще туториалы на гитхабе](https://github.com/weaviate-tutorials)
 
 ## Как быть в курсе происходящего
-[Официальный сайт](https://weaviate.io/)
-[Канал на Youtube](https://www.youtube.com/@Weaviate)
-[Официальный форум](https://forum.weaviate.io/)
-[Блог](https://weaviate.io/blog)
+- [Официальный сайт](https://weaviate.io/)
+- [Канал на Youtube](https://www.youtube.com/@Weaviate)
+- [Официальный форум](https://forum.weaviate.io/)
+- [Блог](https://weaviate.io/blog)
